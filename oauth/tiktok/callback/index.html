@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta name="referrer" content="no-referrer"><title>Connecting…</title>
 <body style="font-family:system-ui;max-width:32rem;margin:4rem auto;padding:0 1rem"><h1>Connecting…</h1><p id="m">Redirecting to finish sign-in.</p>
 <script>
-var t = "https://ve.46-224-46-36.sslip.io/oauth/tiktok/callback" + location.search;
+var t = "http://127.0.0.1:3100/oauth/tiktok/callback" + location.search;
 var p = new URLSearchParams(location.search);
 if (p.get("code") || p.get("error")) { location.replace(t); }
 else { document.getElementById("m").textContent = "Missing sign-in parameters. Please start the connection again."; }
